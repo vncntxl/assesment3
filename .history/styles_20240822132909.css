@@ -1,0 +1,456 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    background-color: black;
+    padding: 0.7 rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    max-width: 90px;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-bar {
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    margin: 15px;
+}
+
+.search-bar input[type="search"] {
+    background: transparent;
+    width: 30vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: #800A1D;
+
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #800A1D;
+    font-weight: 500;
+}
+
+.hero-section {
+    margin-top: 85px;
+}
+
+.white-image {
+    background-image: url(images/white.jpg);
+}
+
+.red-image {
+    background-image: url(images/red.jpg);
+
+}
+
+.rose-image {
+    background-image: url(images/rose.jpg);
+
+}
+
+.sparkling-image {
+    background-image: url(images/white.jpg);
+
+}
+
+.carousel {
+    background: #EEE;
+    font-size: 80px;
+    color: #fff;
+    font-weight: 600;
+    max-height: 500px; 
+    margin-bottom: 50px; 
+}
+.carousel-cell {
+    width: 100%;
+    height: 500px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 0.3s ease;
+}
+
+/* cell number */
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+
+/* big buttons, no circle */
+.flickity-prev-next-button {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+/* arrow color */
+.flickity-prev-next-button .arrow {
+    fill: white;
+}
+
+.flickity-prev-next-button.no-svg {
+    color: white;
+}
+
+.flickity-prev-next-button:hover {
+    background: transparent;
+}
+
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+    display: none;
+}
+/* Start of main content section */
+.main-content {
+    margin: 0px px;
+}
+
+.featured-products {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.featured-products h2 {
+    font-size: 2.5rem;
+    color: #800A1D;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    padding: 20px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+
+.product-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    font-size: 1.2rem;
+    color: #800A1D;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* About Us Section */
+.about-us {
+    text-align: center;
+    padding: 50px 50px;
+    width: 100%;
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    color: #800A1D;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.about-us .btn {
+    display: inline-block;
+    background-color: #800A1D;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.about-us .btn:hover {
+    background-color: #a00;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: left;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-links li {
+    list-style: none;
+}
+
+.social-links li a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+    color: #800A1D;
+}
+
+.footer-note {
+    text-align: center;
+    font-size: 1rem;
+    color: #ccc;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.about-hero {
+    background-image: url('images/about-background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.team {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.team h2 {
+    font-size: 2.5rem;
+    color: #800A1D;
+    margin-bottom: 50px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #777;
+}
+
+.products-hero{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.products-hero .product-card{
+    margin-bottom: 50px;
+}
+.contact-hero {
+    background-color: #f7f7f7;
+    padding: 100px 0;
+    text-align: center;
+    color: #333;
+}
+
+.contact-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #800A1D;
+}
+
+.contact-hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #666;
+}
+
+.contact-form {
+    margin-top: 50px;
+    max-width: 600px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .btn {
+    display: inline-block;
+    background-color: #800A1D;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+.contact-form .btn:hover {
+    background-color: #a00;
+}
