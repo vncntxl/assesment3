@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Wine E-commerce</title>
+    <title>Products - Wine E-commerce</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="icon" href="images/logo.png" type="image/png">
@@ -25,42 +25,56 @@
             <div class="hamburger" id="hamburger">
                 <i class="uil uil-bars"></i>
             </div>
-            <ul class="nav-links" id="nav-links">
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
     <!-- END OF NAVBAR -->
 
-    <!-- START OF CONTACT SECTION -->
-    <section class="contact-hero">
+    <!-- START OF PRODUCTS SECTION -->
+    <section class="products-hero">
         <div class="container">
-            <h1>Contact Us</h1>
-            <p>We're here to help! Get in touch with us by filling out the form below.</p>
+            <h1>Our Wines</h1>
+            <p>Explore our carefully curated selection of wines from around the world.</p>
         </div>
     </section>
 
-    <section class="contact-form container">
-        <form id="contactForm">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
+    <section class="product-grid container">
+        <div class="product-card">
+            <img src="images/wine1.jpg" alt="Chardonnay">
+            <h3>Chardonnay</h3>
+            <p class="description">A classic Chardonnay with hints of apple and oak.</p>
+            <p class="price">$25.00</p>
+        </div>
+
+        <div class="product-card">
+            <img src="images/wine2.png" alt="Cabernet Sauvignon">
+            <h3>Cabernet Sauvignon</h3>
+            <p class="description">Rich and full-bodied, with notes of blackcurrant.</p>
+            <p class="price">$30.00</p>
+        </div>
+
+        <div class="product-card">
+            <img src="images/wine3.webp" alt="Pinot Noir">
+            <h3>Pinot Noir</h3>
+            <p class="description">A smooth Pinot Noir with aromas of cherry and spice.</p>
+            <p class="price">$28.00</p>
+        </div>
+
+        <div class="product-card">
+            <img src="images/wine4.jpg" alt="Merlot">
+            <h3>Merlot</h3>
+            <p class="description">Soft and velvety, with flavors of plum and chocolate.</p>
+            <p class="price">$22.00</p>
+        </div>
+
+        <!-- Add more product cards as needed -->
     </section>
-    <!-- END OF CONTACT SECTION -->
+    <!-- END OF PRODUCTS SECTION -->
 
     <!-- START OF FOOTER -->
     <footer class="footer">
@@ -98,13 +112,6 @@
     </footer>
     <!-- END OF FOOTER -->
 
-    <script>
-        document.getElementById("contactForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-            alert("Successfully contacted!");
-            document.getElementById("contactForm").reset(); // Reset the form after submission
-        });
-    </script>
 </body>
 
 </html>

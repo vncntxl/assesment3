@@ -11,6 +11,13 @@
     <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 
+<script>
+
+document.getElementById("hamburger").addEventListener("click", function() {
+    document.getElementById("nav-links").classList.toggle("open");
+});
+
+</script>
 
 <body>
     <!-- START OF NAVBAR -->
@@ -26,7 +33,7 @@
             <div class="hamburger" id="hamburger">
                 <i class="uil uil-bars"></i>
             </div>
-            <ul class="nav-links" id="nav-links">
+            <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="/about.html">About</a></li>
                 <li><a href="/products.html">Products</a></li>
@@ -121,13 +128,6 @@
     <!-- END OF FOOTER -->
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script>
-    
-    document.getElementById("hamburger").addEventListener("click", function() {
-        document.getElementById("nav-links").classList.toggle("open");
-    });
-    
-    </script>
 </body>
 
 </html>
