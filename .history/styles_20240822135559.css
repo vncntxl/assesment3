@@ -524,16 +524,6 @@ nav ul li a {
     .nav-links.open {
         display: flex;
     }
-
-    .content-container {
-        flex-direction: column;
-    }
-
-    .main-content,
-    .side-content {
-        flex: 1 0 100%;
-        padding-right: 0;
-    }
 }
 
 /* Container for main and aside sections */
@@ -555,15 +545,4 @@ nav ul li a {
     background-color: #f7f7f7;
     padding: 20px;
     border-radius: 8px;
-}
-
-/* Button styles */
-.btn {
-    display: inline-block;
-    background-color: #800A1D;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
 }

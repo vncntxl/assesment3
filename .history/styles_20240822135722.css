@@ -524,16 +524,6 @@ nav ul li a {
     .nav-links.open {
         display: flex;
     }
-
-    .content-container {
-        flex-direction: column;
-    }
-
-    .main-content,
-    .side-content {
-        flex: 1 0 100%;
-        padding-right: 0;
-    }
 }
 
 /* Container for main and aside sections */
